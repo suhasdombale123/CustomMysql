@@ -1,3 +1,3 @@
 FROM mysql
 ENV MYSQL_DATABASE project
-COPY ./sql-scripts/ /docker-entrypoint-initdb.d/
+COPY ./sql-scripts/ /var/lib/mysql/data/
